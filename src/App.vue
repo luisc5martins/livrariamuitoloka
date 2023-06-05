@@ -18,5 +18,4 @@ import MeuCarrinho from './components/MeuCarrinho.vue';
   display: grid;
   grid-template-columns: 3fr 1fr;
 }
-
 </style>
