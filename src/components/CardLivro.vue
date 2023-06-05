@@ -17,7 +17,7 @@ function formatarPreco(preco) {
                 <img :src="props.livro.img" alt="Capa do livro" class="capa-livro" />
             </div>
             <p class="titulo-livro">{{ props.livro.title }}</p>
-            <p class="autor-livro">{{ props.livro.author }}</p>
+            <p class="author-livro">{{ props.livro.author }}</p>
             <p class="preco-livro">{{ formatarPreco(props.livro.price) }}</p>
         </div>
         <div class="card-buttons-livros">
@@ -26,7 +26,7 @@ function formatarPreco(preco) {
     </div>
 </template>
 
-<style>
+<style scoped>
 .card-livro {
     margin: 5px 10px;
     padding: 10px;
