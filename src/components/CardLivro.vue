@@ -1,5 +1,6 @@
 <script setup>
 import { adicionarAoCarrinho } from "@/_data/carrinho.js"
+import MButton from "./MButton.vue";
 
 const props = defineProps({
     livro: Object
@@ -21,7 +22,8 @@ function formatarPreco(preco) {
             <p class="preco-livro">{{ formatarPreco(props.livro.price) }}</p>
         </div>
         <div class="card-buttons-livros">
-            <button @click="adicionarAoCarrinho(props.livro)">Adicionar ao carrinho</button>
+            <MButton @click="adicionarAoCarrinho(props.livro)" texto="Adicionar ao carrinho" />
+            <MButton />
         </div>
     </div>
 </template>
