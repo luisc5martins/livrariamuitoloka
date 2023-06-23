@@ -22,8 +22,10 @@ function formatarPreco(preco) {
             <p class="preco-livro">{{ formatarPreco(props.livro.price) }}</p>
         </div>
         <div class="card-buttons-livros">
-            <MButton @click="adicionarAoCarrinho(props.livro)" texto="Adicionar ao carrinho" />
-            <MButton />
+            <m-button class="secundario" @click="emit('adicionarAoCarrinho', props.livro)">
+                <cart-plus />
+            </m-button>
+            <m-button class="sucesso"> <share-variant /> </m-button>
         </div>
     </div>
 </template>
